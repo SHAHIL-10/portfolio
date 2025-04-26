@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #077b32;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    .container {
+      width: 95%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in;
+    }
+    .project {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+    .project:last-child {
+      border-bottom: none;
+    }
+    .project h3 {
+      color: #222;
+      margin-top: 0;
+    }
+    .project p {
+      margin: 6px 0;
+      color: #444;
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .container {
+        padding: 15px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Home Button Style */
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      z-index: 999;
+    }
+
+    .home-button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Projects</h1>
+    <p>Showcasing my projects</p>
+  </header>
+
+  <div class="container">
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>Project: Web Page for a Restaurant</h3>
+      <p><strong>Description:</strong> A simple restaurant website where users can make orders online.</p>
+      <p><strong>Technologies Used:</strong> HTML, CSS</p>
+      <p><strong>GitHub:</strong> Not available</p>
+      <p><strong>Screenshots:</strong></p>
+      <img src="webpage1.jpg" alt="Restaurant Web Page Screenshot 1">
+      <img src="webpage2.jpg" alt="Restaurant Web Page Screenshot 2">
+    </div>
+
+     <!-- Project 2 -->
+    <div class="project">
+        <h3>Project: Kolkata Metro Card System</h3>
+        <p><strong>Description:</strong> Kolkata Metro fare calculation and balance check with rechargeable features.</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>GitHub:</strong> Not available</p>
+        <p><strong>Screenshots:</strong></p>
+        <img src="metro1.jpg" alt="Kolkata Metro Card Screenshot 1">
+        <img src="metro2.jpg" alt="Kolkata Metro Card Screenshot 2">
+        <img src="metro3.jpg" alt="Kolkata Metro Card Screenshot 2">
+      </div>
+  </div>
+
+  <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:black;
+      margin: 0;
+    }
+    nav {
+      background: #077b32;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .about-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .about-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .about-container p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>My Portfolio</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p>Hi! I'm Shahil Molla, a passionate developer from kolkata. I have a strong interest in web development, app development, and solving complex problems using code.</p>
+    <p>I specialize in front-end technologies like HTML, CSS, and JavaScript, and I'm always looking to learn new skills and improve my coding abilities. My goal is to build innovative, user-friendly applications that have a positive impact.</p>
+    <p>When I'm not coding, I enjoy researching about new Technologies, Play outdoor Games to make my mind free. Feel free to explore my work on this portfolio, and don’t hesitate to reach out for collaborations or projects!</p>
+  </div>
+
+  <button class="home-button" onclick="location.href='index.html'">Home</button>
+</body>
+</html>

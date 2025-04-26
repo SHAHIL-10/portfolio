@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+      margin: 0;
+    }
+    nav {
+      background: #077b32 ;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .skills-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .skills-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .skills-container .skill-set {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .skill-set div {
+      background: #333;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+      text-align: center;
+      width: 150px;
+      margin: 10px;
+    }
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>My Portfolio</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="skills-container">
+    <h2>My Skills</h2>
+    <div class="skill-set">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>C</div>
+      <div>DBMS</div>
+      <div>Python</div>
+      <div>Kali Linux</div>
+      <div>Git</div>
+      <!-- Add more skills as needed -->
+    </div>
+  </div>
+
+  <button class="home-button" onclick="location.href='index.html'">Home</button>
+</body>
+</html>
